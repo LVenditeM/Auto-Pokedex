@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://github.com/LVenditeM"><img src="./src/imagens/pokeball.png" class="logo" alt="pokebola"></a>
+
+        <button id="theme">
+            <img src="./src/imagens/sun.png" alt="Dark Mode" class="img-button">
+        </button>
+    </header>
+    <div class="center">
+        <img src="./src/imagens/POKEDEX.png" class="imgdex">
+    </div>
+    <div class="center">
+        <div class="search-bar">
+            <label for="">Pesquisar</label>
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+        <div class="select-box ">
+            <label for="">Versão</label>
+            <select class="select-box select">
+                <option value="normal" class="item">Normal</option>
+                <option value="shiny" class="item">Shiny</option>
+            </select>
+            <span class="select-arrow"></span>
+        </div>
+        <div class="select-box ">
+            <label for="">Região</label>
+            <select class="select-box select">
+                <option value="normal" class="item">Kanto</option>
+                <option value="shiny" class="item">Johto</option>
+            </select>
+            <span class="select-arrow"></span>
+        </div>
+        <div class="select-box ">
+            <label for="">Filtrar por</label>
+            <select class="select-box select">
+
+                <option value="normal" class="item">Numero pokedex ></option>
+                <option value="shiny" class="item">Numero pokedex << /option>
+            </select>
+            <span class="select-arrow"></span>
+        </div>
+    </div>
+    </div>
+    <main>
+        <ul class="pokemon-list"></ul>
+        <div class="pokedex">
+            <div class="door-left">
+                <div class="screw top-left"></div>
+                <div class="screw bottom-left"></div>
+            </div>
+            <div class="door-right">
+                <div class="screw top-right"></div>
+                <div class="screw bottom-right"></div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer></footer>
+    <script src=" ./src/js/index.js"></script>
+    <script src="./src/js/dark-mode.js"></script>
+</body>
+
+</html>

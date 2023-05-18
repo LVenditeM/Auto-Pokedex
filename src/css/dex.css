@@ -1,0 +1,140 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.door-left {
+  left: 0;
+  animation: open-door-left 3s forwards;
+  clip-path: polygon(0 0, 60% 0, 100% 0%, 60% 100%, 0 100%);
+}
+
+.door-right {
+  right: 0;
+  animation: open-door-right 3s forwards;
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 40% 100%, 0 100%);
+}
+
+.door-left,
+.door-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  background-color: #ed1c24;
+  transform-origin: center;
+  transition: background-color 0.3s ease;
+}
+
+.door-right::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  width: 95%;
+  height: 90%;
+  background-color: #b0b0b0;
+  z-index: 1;
+}
+
+.door-left::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 100%;
+  height: 90%;
+  border-right: 100px solid #b0b0b0;
+  background-color: #b0b0b0;
+  z-index: 1;
+}
+
+
+.door-right::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 80%;
+  height: 70%;
+  background-color: #696969;
+  z-index: 2;
+}
+
+.door-left::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  border-right: 100px solid #696969;
+  background-color: #696969;
+  z-index: 2;
+}
+
+.screw {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.screw.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.screw.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.screw.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.screw.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+@keyframes open-door-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(-200%);
+    transform: scale(0);
+  }
+}
+
+@keyframes open-door-right {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(100%);
+
+  }
+
+  100% {
+    transform: translateX(200%);
+    transform: scale(0);
+  }
+
+}
+
+body::-webkit-scrollbar {
+  overflow-x: hidden;
+}
