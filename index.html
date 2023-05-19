@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="icon" href="src/imagens/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
@@ -45,13 +46,18 @@
             <span class="select-arrow"></span>
         </div>
         <div class="select-box ">
-            <label for="">Filtrar por</label>
+            <label for="">Filtrar</label>
             <select class="select-box select">
 
                 <option value="normal" class="item">Numero pokedex ></option>
                 <option value="shiny" class="item">Numero pokedex << /option>
             </select>
             <span class="select-arrow"></span>
+        </div>
+        <div class="pagination">
+            <button id="previous-page"></button>
+            <span id="current-page"> 1 </span>
+            <button id="next-page"></button>
         </div>
     </div>
     </div>

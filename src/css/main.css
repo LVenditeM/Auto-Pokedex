@@ -4,6 +4,8 @@
 @import 'scroll.css';
 @import 'reset.css';
 @import 'types.css';
+@import 'progress.css';
+
 
 body {
     font-family: 'Poppins', sans-serif;

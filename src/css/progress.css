@@ -1,0 +1,44 @@
+/* Estilos para as barras de progresso */
+.progress-bar {
+    height: 6.2px;
+    background-color: #ddd;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 0.3s ease-in;
+}
+
+.progress-value {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Estilos para os nomes dos stats */
+.stat-name {
+    font-weight: bold;
+}
+
+/* Estilos para a lista de stats */
+.Stats {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Stats li {
+    margin-bottom: 10px;
+}
+
+main .Stats {
+    max-height: 200px;
+    width: 100%;
+    overflow-y: auto;
+    font-size: 10px;
+    padding-right: 10px;
+}

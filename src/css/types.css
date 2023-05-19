@@ -1,5 +1,27 @@
+main .card .types {
+    display: flex;
+    gap: 15px;
+}
+
+main .card:hover .sprite {
+    margin-top: -12%;
+}
+
+main .card .type {
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    min-width: 75px;
+    text-align: center;
+}
+
+main .card:hover .types {
+    display: none;
+    gap: 15px;
+}
+
 main .grass {
-    background: linear-gradient(to bottom, rgb(133, 218, 144), rgb(39, 122, 50));
+    background: linear-gradient(to bottom, rgb(122, 202, 84), rgb(62, 125, 55));
     color: whitesmoke;
     border: 1px solid black;
 }
@@ -17,7 +39,7 @@ main .fighting {
 }
 
 main .water {
-    background: linear-gradient(to bottom, rgb(144, 200, 235), rgb(45, 103, 140));
+    background: linear-gradient(to bottom, rgb(100, 169, 242), rgb(47, 97, 175));
     color: whitesmoke;
     border: 1px solid black;
 }
@@ -46,8 +68,8 @@ main .poison {
     border: 1px solid black;
 }
 
-main .eletric {
-    background: linear-gradient(to bottom, rgb(206, 208, 101), rgb(205, 166, 69));
+main .electric {
+    background: linear-gradient(to bottom, rgb(247, 208, 44), rgb(177, 136, 11));
     color: whitesmoke;
     border: 1px solid black;
 }
@@ -74,6 +96,28 @@ main .dragon {
     background: linear-gradient(to bottom, rgb(90, 90, 254), rgb(44, 44, 106));
     color: whitesmoke;
     border: 1px solid black;
+}
+
+main .flying {
+    background: linear-gradient(to bottom, rgb(158, 166, 213), rgb(76, 86, 165));
+    color: whitesmoke;
     border: 1px solid black;
+}
+
+main .steel {
+    background: linear-gradient(to bottom, rgb(185, 185, 199), rgb(96, 96, 110));
+    color: whitesmoke;
+    border: 1px solid black;
+}
+
+main .rock {
+    background: linear-gradient(to bottom, rgb(187, 173, 125), rgb(105, 93, 62));
+    color: whitesmoke;
+    border: 1px solid black;
+}
+
+main .ghost {
+    background: linear-gradient(to bottom, rgb(115, 87, 151), rgb(54, 31, 80));
+    color: whitesmoke;
     border: 1px solid black;
 }

@@ -11,8 +11,9 @@
     width: 100%;
     float: bottom;
 }
+
 .search-bar {
-width: 40%;
+    width: 40%;
 }
 
 .select-box {
@@ -58,3 +59,44 @@ width: 40%;
     color: black;
     background-color: transparent !important;
 }
+
+#next-page {
+    background-color: transparent;
+    border: none;
+    top: calc(50% - 12px);
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid #999999;
+    border-bottom: 3px solid #999999;
+    transform: rotate(225deg);
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#next-page:hover,
+#previous-page:hover {
+    border-left: 3px solid #bbff00;
+    border-bottom: 3px solid #bbff00;
+}
+
+#previous-page {
+    margin-top: 15px;
+    background-color: transparent;
+    border: none;
+    top: calc(50% - 12px);
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid #999;
+    border-bottom: 3px solid #999;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.pagination
+{
+display: block;
+}
+.hidden {
+    display: none!important;
+  }
